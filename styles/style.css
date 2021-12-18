@@ -1,0 +1,1349 @@
+::-webkit-scrollbar {
+  width: 10px;
+  height: 60px;
+  background-color: rgba(224, 93, 185, 0.979);
+  opacity: 0.75;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(6, 10, 46);
+  opacity: 0.5;
+}
+
+@font-face {
+  font-family: matrix;
+  src: url(./fonts/PressStart2P-Regular.ttf);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(42, 7, 75);
+  text-shadow: 0px 2px 1px rgb(204, 190, 190);
+}
+
+body {
+  font-family: 'Righteous', sans-serif;
+  overflow-x: hidden;
+  width: 100vw;
+  /*height: 100vh;  talvez a falta disso bug o tamanho do video de fundo*/
+  margin: 0;
+}
+
+p {
+  cursor: default;
+}
+
+h1 {
+  cursor: default;
+}
+
+video {
+  position: fixed;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+#vid1 {
+  right: 0;
+  width: 100%;
+  height: auto;
+}
+
+.vid2 {
+  opacity: 10%;
+  left: 0;
+  width: auto;
+  height: 100%;
+}
+
+#linkV {
+  z-index: 1;
+  top: -3px;
+  right: 10px;
+  position: absolute;
+  color: rgba(255, 255, 255, 0.651);
+  text-shadow: none;
+  margin: 10px 10px;
+  text-decoration: none;
+}
+
+#container {
+  margin: 40px auto 0 auto;
+  position: relative;
+  width: fit-content;
+}
+
+#page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  min-width: 1333.500px;
+  height: 834px;
+}
+
+.banner {
+  border-radius: 5px;
+  position: relative;
+  height: 400px;
+  border: 5px solid orange;
+  box-sizing: border-box;
+}
+
+#person {
+  background-image: url(/assets/images/shutterstock_1325072363.png);
+  background-size: cover;
+}
+
+#tec {
+  background-image: url(/assets/images/shutterstock_1694512603.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px -330px;
+  position: relative;
+}
+
+#perfil {
+  border-radius: 100px;
+  left: 150px;
+  top: 2px;
+  position: absolute;
+  height: 200px;
+  border: 2px orange solid;
+}
+
+#fsDev {
+  position: absolute;
+  top: 185px;
+  left: 245px;
+  width: 220px;
+  transform: rotate(-15deg);
+}
+
+#tecPro {
+  width: 260px;
+  top: 80px;
+  left: 250px;
+  transform: rotate(-15deg);
+  position: absolute;
+}
+
+#saibaMais {
+  display: none;
+  transform: rotate(-15deg);
+  position: absolute;
+}
+
+.forms {
+  border: none;
+  border-right: 4px solid white;
+  position: relative;
+  background-image: url(/assets/images/fundoForm.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 433.672px;
+  width: 291.163px;
+  left: 180px;
+  top: -22px;
+}
+
+#left-form {
+  box-shadow: -10px 10px 10px 10px rgba(142, 91, 189, 0.582);
+  transform: skew(40deg);
+}
+
+#right-form {
+  box-shadow: -30px 2px 10px -10px rgba(142, 91, 189, 0.582);
+  transform: skew(-40deg);
+}
+
+#arrow-botton2{
+  display: none;
+}
+
+#arrow{
+  display: none;
+}
+
+#more {
+  width: 500px;
+  right: 100px;
+}
+
+#more p {
+  text-align: center;
+  padding: 0;
+}
+
+.block {
+  display: flex;
+  color: rgb(42, 7, 75);
+  justify-content: flex-start;
+  flex-direction: column;
+  position: absolute;
+  padding: 15px;
+  right: 60px;
+  top: 60px;
+  width: 550px;
+  background-image: url(/assets/images/fundo21.png);
+  background-position:  0 -220px;
+  background-size: cover;
+  border-radius: 15px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45);
+}
+
+.block p {
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+#suporte {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45);
+  width: 440px;
+}
+
+#btns {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  width: 700px;
+}
+
+#btns div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  width: 100%;
+  top: 28px;
+  right: 5px;
+}
+
+#btns p {
+  color: white;
+  margin: 0;
+}
+
+.btnOption {
+  border: 2px solid rgb(255, 255, 255);
+  background-image: url(/assets/images/placa.png);
+  background-size: contain;
+  border-radius: 8px;
+  font-family: 'Righteous', sans-serif;
+  font-size: 1.3em;
+  box-sizing: border-box;
+  width: 230px;
+}
+
+.btnOption img {
+  height: 75px;
+}
+
+button {
+  cursor: pointer;
+}
+
+#conhecimentos:hover,
+#projetos:hover {
+  animation: moving 1s infinite;
+}
+
+#conhecimentos {
+  animation: imHere 4s 6s infinite both;
+}
+
+#projetos {
+  animation: imHere 4s 3s infinite both;
+}
+
+.matrix {
+  display: none;
+  overflow: hidden;
+  z-index: 2;
+  position: absolute;
+  width: 1400px;
+  height: 892.375px;
+  top: 419px;
+  left: -90%;
+  box-sizing: border-box;
+  border-radius: 15px;
+  color: rgb(42, 7, 75);
+  text-shadow: 2px 2px rgba(3, 3, 3, 0);
+  background-color: rgb(44, 14, 99);
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 1em rgb(0, 0, 0);
+}
+
+.ppc {
+  color: rgb(18, 180, 201);
+  font-family: matrix;
+  padding: 20px;
+  padding-top: 35px;
+  margin: 0;
+  text-shadow: none;
+}
+
+.padding15 {
+  padding: 15px;
+}
+
+.padding0 {
+  padding: 0;
+}
+
+
+#tecCardContainer {
+  display: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 20px 0 20px;
+}
+
+#description {
+  background-position: center;
+  display: none;
+  position: relative;
+  height: 212.375px;
+  margin: 20px 20px 0;
+
+}
+
+.back {
+  display: none;
+  z-index: 2;
+  font-family: 'Righteous', sans-serif;
+  position: absolute;
+  right: 40px;
+  color: white;
+  top: 40px;
+  width: 80px;
+  height: 60px;
+  border: none;
+  background-image: url(/assets/images/backbtn.png);
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 0px 1px 5px 1px rgb(255, 255, 255);
+}
+
+.back:hover {
+  animation: moving 1s infinite;
+}
+
+#description div {
+  width: 50%;
+}
+
+.bigH1 {
+  margin: 0;
+  font-size: 40px;
+}
+
+.backGroundM {
+  background-image: url(/assets/images/fundooo22.png);
+  opacity: 90%;
+  background-position: bottom;
+  border-radius: 10px;
+}
+
+.backGroundM p {
+  margin-top: 6px;
+  font-size: 1.1em;
+}
+
+.tecCard {
+  margin-bottom: 20px;
+  width: 250px;
+  height: 300px;
+  background-size: cover;
+}
+
+.tecCard h1 {
+  margin: 0;
+  font-size: 34px;
+}
+
+.topCard {
+  display: flex;
+  flex-direction: column;
+  height: 130px;
+}
+
+.imgPercent {
+  width: 100%;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.imgPercent h1 {
+  margin: 0;
+  color: rgb(58, 219, 247);
+  text-shadow: 2px 2px black;
+  text-align: center;
+}
+
+.tecImg {
+  width: 96px;
+}
+
+.title {
+  text-align: center;
+  height: 34px;
+}
+
+.cardModule {
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 170px;
+}
+
+.inlineFlex p {
+  display: inline-flex;
+  padding: 0px;
+  margin: 10px 0 0 0;
+}
+
+.complete {
+  color: rgb(58, 219, 247);
+  text-shadow: 2px 2px black;
+}
+
+.flexRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#projectContainer {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#projectContainer div {
+  box-sizing: border-box;
+}
+
+#projectTitle {
+  background-position: center;
+  position: relative;
+  width: calc(100% - 40px);
+  display: flex;
+  height: calc(22% - 40px);
+  margin: 20px;
+  padding: none;
+} 
+
+#projectTitle div {
+  width: 60%;
+}
+
+#projectSection {
+  overflow: hidden;
+  display: flex;
+  background-size: cover;
+  position: relative;
+  height: calc(78% - 20px);
+  margin: 0px 20px 20px 20px;
+  width: calc(100% - 40px);
+}
+
+.div100 {
+  width: 100%;
+  height: 100%;
+}
+
+#transition {
+  border-radius: 15px;
+  background-color: white;
+  position: absolute;
+  height: 450px;
+  width: 894.344px;
+  bottom: 56px;
+  left: 36.2px;
+  opacity: 0%;
+  z-index: 3;
+  animation: flash 1s forwards; 
+}
+
+#slideDiv {
+  width: 100%;
+  position: relative;
+}
+
+#project2 {
+  background-size: cover;
+  position: absolute;
+  right: -100%;
+  top: 0;
+}
+
+.projectDesc {
+  width: 100%;
+  height: 134px;
+}
+
+.projectDesc h1,
+.projectDesc p {
+  text-align: center;
+}
+
+.projectDesc p {
+  width: 60%;
+  margin: 20px auto 0 auto;
+}
+
+.projectDesc2 {
+  position: relative;
+  width: 100%;
+  height: 500.469px;
+  justify-content: space-around;
+}
+
+.about {
+  border-radius: 12px;
+  width: 350px;
+  height: 450px;
+  margin-bottom: 20px;
+  background-size: cover;
+}
+
+.projectDesc2 h1 {
+  text-align: center;
+}
+
+.arrow {
+  position: absolute;
+  height: 70px;
+  top: 204px;
+}
+
+#right:hover,
+#left:hover {
+  cursor: pointer;
+}
+
+#right {
+  right: 50px;
+  animation: movingArrowRight 1s infinite;
+}
+
+#left {
+  animation: movingArrowLeft 1s infinite;
+  display: none;
+  left: 50px;
+}
+
+.imgProject {
+  border-radius: 15px;
+  box-shadow: -1px 1px 5px 5px rgba(0, 0, 0, 0.582);
+  height: 450px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+ul {
+  margin-top: 0;
+  font-size: 2em;
+}
+
+.fourImg img {
+  width: 76px;
+  height: 76px;
+}
+
+/*Animações----------------------------------------*/
+
+#fDiv {
+  background-color: white;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0%;
+  top: 0;
+  left: 0;
+  animation: flash 0.3s;
+}
+
+.neon {
+  animation: neonColor 7s infinite;
+}
+
+@keyframes imHere {
+  5% {
+    transform: rotate(5deg)
+  }
+
+  10% {
+    transform: rotate(-5deg)
+  }
+
+  15% {
+    transform: rotate(0deg)
+  }
+}
+
+@keyframes slide {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: -100%;
+  }
+}
+
+@keyframes slide2 {
+  0% {
+    right: 100%;
+  }
+
+  100% {
+    right: 0%;
+  }
+}
+
+@keyframes flash {
+  50% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes neonColor {
+  0% {
+    border-color: orange;
+  }
+
+  20% {
+    border-color: palevioletred;
+  }
+
+  40% {
+    border-color: blue;
+  }
+
+  60% {
+    border-color: purple;
+  }
+
+  80% {
+    border-color: red;
+  }
+
+  100% {
+    border-color: orange;
+  }
+}
+
+@keyframes neonColor2 {
+  0% {
+    border-color: orange;
+  }
+
+  20% {
+    border-color: palevioletred;
+  }
+
+  40% {
+    border-color: blue;
+  }
+
+  60% {
+    border-color: purple;
+  }
+
+  80% {
+    border-color: red;
+  }
+
+  100% {
+    border-color: orange;
+  }
+}
+
+
+@keyframes movingArrowRight {
+  50% {
+    right: 40px;
+  }
+
+  100% {
+    right: 50px;
+  }
+}
+
+@keyframes movingArrowLeft {
+  50% {
+    left: 40px;
+  }
+
+  100% {
+    left: 50px;
+  }
+}
+
+@keyframes moving {
+  20% {
+    transform: rotate(5deg)
+  }
+
+  40% {
+    transform: rotate(-5deg)
+  }
+
+  60% {
+    transform: rotate(5deg)
+  }
+
+  80% {
+    transform: rotate(-5deg)
+  }
+
+  100% {
+    transform: rotate(0deg)
+  }
+}
+
+@keyframes grow {
+  100% {
+    left: 50%;
+  }
+}
+
+@keyframes grow2 {
+  0% {
+    left: 50%;
+  }
+
+  100% {
+    left: 200%;
+  }
+}
+
+/*responsividade------------------------------------------*/
+
+@media (min-aspect-ratio: 16/9) {
+  #vid1 {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  #vid1 {
+    width: auto;
+    height: 100%;
+  }
+}
+
+/*
+faça isso quando for modificar o site para celular
+@media (max-width: 767px) {
+  video{
+      display: none;
+  }
+  body {
+      background: url('poster.jpg');
+      background-size: cover;
+  }
+}*/
+
+@media screen and (max-width:1768px){
+
+  .matrix {
+    height: 840.375px;
+    top: 400px;
+    width: 1350px;
+  }
+
+  .block{
+    top: 50px;
+  }
+
+  #tecCardCpntainer{
+    height: 640px;
+  }
+
+  .tecCard {
+    width: 250px;
+    height: 274px;
+  }
+
+  .tecImg{
+    height: none;
+    width: 70px;
+  }
+
+  .imgPercent {
+    height: 80px;
+  }
+
+  .inlineFlex p {
+    margin: 5px 0 0 0;
+  }
+
+  .bigH1{
+    font-size: 37px;
+  }
+
+  #transition{
+    bottom: 35.5px;
+    left: 23.8px;
+  }
+
+  #fsDev{
+    left: 250px;
+  }
+
+  #tecPro{
+    left: 240px;
+  }
+
+  .banner {
+    height: 380px;
+  }
+
+  #container {
+    margin-top: 25px;
+  }
+
+  #page {
+    height: 794px;
+  }
+
+  .forms {
+    height: 410px;
+  }
+
+  #perfil {
+    left: 155px;
+  }
+
+  #left-form {
+    top: -17px;
+  }
+
+  #right-form {
+    top: -21px;
+  }
+
+  #tec{
+    background-position: 0px -350px;
+  }
+
+}
+
+ @media screen and (max-width:1766px){
+
+  #linkV{
+    top: -8px; 
+  }   
+
+}
+
+@media screen and (max-width:1600px) {
+
+  #page {
+    min-width: 1200px;
+    height: 674px;
+  }
+
+  .banner {
+    height: 320px;
+  }
+
+  .forms {
+    height: 350px;
+    width: 270px;
+    left: 150px;
+  }
+
+  #left-form {
+    top: -17px;
+  }
+
+  #right-form {
+    top: -21px;
+  }
+
+  .block {
+    width: 490px;
+    top: 20px;
+    background-position: 0 -170px;
+  }
+
+  #fsDev {
+    top: 165px;
+    width: 210px;
+    left: 220px;
+  }
+
+  #perfil {
+    height: 180px;
+    left: 141px;
+  }
+
+  #tecPro {
+    top: 50px;
+    left: 210px;
+    width: 240px;
+  }
+
+  #person {
+    background-position: 0px -50px;
+    background-repeat: no-repeat;
+  }
+
+  #tec {
+    background-size: 1200px;
+    background-position: 0px -325px;
+  }
+
+  #suporte {
+    width: 375px;
+  }
+
+  #btns div {
+    right: 75px;
+    width: 80%;
+    top: 20px;
+  }
+
+  .btnOption {
+    width: 200px;
+    height: 100px;
+  }
+
+  .btnOption img {
+    height: 68px;
+  }
+
+}
+
+@media screen and (max-width:1440px) {
+
+  .vid2{
+    height: auto;
+    width: 100%;
+  }
+
+  .ppc {
+    padding-top: 25px;
+  }
+
+  .matrix{
+    height: 752px;
+    top: 353.5px;
+  }
+
+  #tecCardContainer {
+    margin: 15px 15px 0 15px;
+  }
+
+  #description{
+    margin: 15px 15px 0;
+    height: 170px;
+  }
+
+  .bigH1{
+    font-size: 32px;
+  }
+
+  #descDiv1, #descDiv2{
+    padding-top: 5px;
+    padding-bottom: 0px;
+  }
+
+  .tecCard{
+    height: 261.5px;
+    margin-bottom: 15px;
+  }
+
+  .topCard{
+    height: 120px;
+  }
+
+  .tecCard h1 {
+    font-size: 32px;
+  }
+
+  .back{
+    top: 30px;
+    right: 30px;
+    height: 55px;
+  }
+
+  .arrow{
+    height: 60px;
+    top: 190px;
+  }
+
+  #projectTitle{
+    width: calc(100% - 30px);
+    height: calc(22% - 30px);
+    margin: 15px;
+    padding: 0 15px 0 15px;
+  }
+
+  #projectTitle div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #projectSection{
+    width: calc(100% - 30px);
+    height: calc(78% - 15px);
+    margin: 0px 15px 15px 15px;  
+  }
+
+  .projectDesc{
+    height: 21.08629013476342%;
+  }
+
+  #transition{
+    width: 794.969px;
+    height: 400px;
+    bottom: 25px;
+    left: 51.5px;
+  }
+
+  .imgProject{
+    height: 400px;
+    margin-bottom: 0;
+  }
+
+  .projectDesc2{
+    padding: 15px;
+  }
+
+  .about {
+    height: 400px;
+    margin-bottom: 20px;
+  }
+
+  #page {
+    min-width: 1200px;
+    height: 674px;
+  }
+
+  .forms {
+    height: 350px;
+    width: 270px;
+    left: 150px;
+  }
+
+  #left-form {
+    top: -17px;
+  }
+
+  #right-form {
+    top: -21px;
+  }
+
+  .block {
+    width: 550px;
+    top: 35px;
+    font-size: 0.98em;
+    background-position: 0 250px;
+  }
+
+  #fsDev {
+    top: 170px;
+    width: 210px;
+    left: 219px;
+  }
+
+  #tecPro {
+    top: 50px;
+    left: 220px;
+    width: 230px;
+  }
+
+  #perfil {
+    height: 180px;
+    left: 141px;
+  }
+
+  #person {
+    background-image: url(/assets/images/shutterstock_1325072363\ -\ litle.png);
+    background-position: 0px -60px;
+  }
+
+  #tec {
+    background-size: 1200px;
+    background-position: 0px -325px;
+  }
+
+  #suporte {
+    width: 375px;
+  }
+
+  #btns div {
+    right: 75px;
+    width: 80%;
+    top: 20px;
+  }
+
+  .btnOption {
+    width: 200px;
+    height: 100px;
+  }
+
+  .btnOption img {
+    height: 68px;
+  }
+
+}
+
+@media screen and (max-width:1403px) {
+  
+  .vid2{
+    height: 100%;
+    width: auto;
+  }
+
+  /* .ppc {
+    padding-top: 25px;
+  } */
+
+  .matrix{
+    width: 1300px;
+  }
+
+  .tecCard{
+    width: 238px;
+  }
+
+  .inlineFlex p{
+    font-size: 1.05em;
+  }
+
+  #transition{
+    left: 38.5px;
+  }
+
+}
+
+@media screen and (max-width:1366px){
+
+  #page{
+    min-width: 1000px;
+  }
+
+  .forms{
+    animation: none;
+  }
+
+  #left-form{
+    display: none;
+  }
+  
+  #arrow-botton{
+    z-index: 4;
+    border: 4px solid orange;
+    border-top: none;
+    animation: neonColor2 7s infinite;
+    border-bottom: none;
+    display: block;
+    width: 200px;
+    height: 245px;
+    position: relative;
+    background-color: rgb(43, 13, 82);
+    top: -20px;
+    left: 75px;
+  }
+
+  #arrow{
+    z-index: 3;
+    display: block;
+    position: relative;
+    top: -90px;
+    height: 245px;
+    left: 7px;
+  }
+
+  #perfil {
+    height: 120px;
+    left: 117px;
+    top: 90px;
+    z-index: 4;
+  }
+
+  .neon{
+    animation: none;
+  }
+
+  #person{
+    width: 1000px;
+    margin: auto;
+    animation: neonColor2 7s infinite;  
+  }
+
+  #tec{
+    display: none;
+  }
+
+  #fsDev{
+    z-index: 4;
+    top: -3px;
+    left: 78px;
+    width: 200px;  
+  }
+
+  #saibaMais{
+    z-index: 4;
+    display: block;
+    top: 220px;
+    width: 260px;
+    left: 55px;
+  }
+
+  .matrix{
+    width: 1000px;
+    z-index: none;
+    position: relative;
+    bottom: none;
+    left: 50%;   
+  }
+
+  #page{
+    height: fit-content;
+    margin-bottom: 50px;
+  }
+
+  #um{
+    display:block;
+  }
+
+  #description{
+    display: flex;
+  }
+
+  #tecCardContainer{
+    display: flex;
+  }
+
+  .tecCard {
+    width: 190px;
+    margin-bottom: 10px;
+    height: 271px;
+  }
+
+  .topCard{
+    height: 100px;
+  }
+
+  .tecImg {
+    width: 50px;
+  }
+
+  .cardModule{
+    height: 176.5px;
+  }
+
+  .inlineFlex p {
+    font-size: 0.95em;
+    margin-top: 10px;
+  }
+
+  #tecEmail{
+    display: none;
+  }
+
+  #description {
+    margin: 10px 10px 0;
+  }
+  
+  #tecCardContainer {
+    margin: 10px 10px 0 10px;
+  }
+
+/*____*/
+
+  #dois{
+    display:block;
+    margin-top: 25px;
+    box-shadow: 0 20px 1em rgb(0 0 0);
+  }
+
+  #projectContainer{
+    display: block;
+  }
+
+  #projectTitle {
+    width: calc(100% - 20px);
+    height: calc(22% - 20px);
+    margin: 10px;
+    padding: 0 10px 0 10px;
+  }
+
+  #projectSection {
+    width: calc(100% - 20px);
+    height: calc(78% - 10px);
+    margin: 0px 10px 10px 10px;
+}
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+    width: 210px;
+  } 
+  
+  .about img{
+    height: 60px;
+  } 
+
+  .fourImg img {
+    height: 50px;
+  }
+
+  ul {
+    margin-top: 0;
+    font-size: 1.25em;
+  }
+
+  .imgProject {
+    height: 350px;
+    margin-bottom: 0;
+  } 
+
+  #transition{
+    width: 695.594px;
+    height: 350px;
+    bottom: 52px;
+    left: 26px;
+  }
+
+  .back {
+    right: -500px;
+  }
+
+}
+
+@media screen and (max-width:1084px){
+}
