@@ -452,8 +452,12 @@ button {
   padding: none;
 } 
 
-#projectTitle div {
-  width: 60%;
+#pjt1{
+  width: 627px;
+}
+
+#pjt2{
+  margin-left: 80px;  
 }
 
 #projectSection {
@@ -1004,13 +1008,13 @@ faça isso quando for modificar o site para celular
     width: calc(100% - 30px);
     height: calc(22% - 30px);
     margin: 15px;
-    padding: 0 15px 0 15px;
+    padding: 15px;
   }
 
   #projectTitle div {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; */
   }
 
   #projectSection{
@@ -1297,8 +1301,17 @@ faça isso quando for modificar o site para celular
     width: calc(100% - 20px);
     height: calc(22% - 20px);
     margin: 10px;
-    padding: 0 10px 0 10px;
+    padding: 10px;
   }
+
+  #pjt1{
+    width: 627px;
+  }
+  
+  #pjt2{
+    margin-left: 40px;  
+  }
+  
 
   #projectSection {
     width: calc(100% - 20px);
