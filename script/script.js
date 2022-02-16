@@ -5,9 +5,10 @@ let container = document.getElementById("container");
 let projectSection = document.getElementById("projectSection");
 let projectContainer = document.getElementById("projectContainer");
 let matrixNumber;
+let pTraco = document.getElementsByClassName("p-");
 
 document.addEventListener('DOMContentLoaded', () => {
-    setTimeout(() => { alert("Este site não é responsivo em telas menores que 1000 pixels no momento !") }, 600)
+    setTimeout(() => { alert("Este site não é responsivo em telas menores que 840 pixels no momento !") }, 600)
 })
 
 backBtn.forEach((btn) => {
@@ -125,48 +126,4 @@ function nextProject(e) {
 
 }
 
-let arrowB = document.getElementById("arrow-botton");
 
-// let animationOn = false;                     COMENTADO PORQUE DESCONSIDEREI ESSA FUNÇÃO NO MOMENTO
-
-// read = setInterval(() => {
-//     if (arrowB.offsetHeight != 0 || matrix[1].style.display == "block") {
-//         animationOn = true
-
-//     } else {
-//         animationOn = false;
-//     }
-//     if (animationOn) {
-//         console.log("indo")
-//         showTransition(btnTime);
-//     }
-// }, 5000);
-
-// let transition = document.createElement("div");
-// let transitionOn = false;
-// transition.id = "transition";
-// let imgTurn = 0;
-// let imgProject = document.querySelectorAll(".imgProject");
-
-// function showTransition() {
-//     projectSection.appendChild(transition);
-//     transitionOn = true;
-//     setTimeout(() => { nextImg(); }, 500);
-//     setTimeout(() => { projectSection.removeChild(transition); transitionOn = false; }, 1000);
-// }
-
-
-function nextImg() {
-
-    if (imgTurn == 2) {
-        imgTurn = 0;
-    } else {
-        imgTurn++;
-    }
-    if (btnTime == "right") {
-        imgProject[0].src = "/assets/images/site" + imgTurn + ".png";
-    } else {
-        imgProject[1].src = "/assets/images/site1" + imgTurn + ".png";
-    }
-
-}

@@ -52,6 +52,8 @@ function matrixLoading(div) {
 //Animações de flash--------------------------
 
 let flashStage = 0;
+let arrowB = document.getElementById("arrow-botton");
+
 
 function flashAnimation(div) {
 

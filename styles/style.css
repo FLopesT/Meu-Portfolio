@@ -58,8 +58,16 @@ video {
   height: 100%;
 }
 
-#linkV {
-  z-index: 1;
+#bkg1{
+  display: none;
+}
+
+#bkg2{
+  display: none;
+}
+
+.linkV {
+  z-index: 2;
   top: -3px;
   right: 10px;
   position: absolute;
@@ -67,6 +75,10 @@ video {
   text-shadow: none;
   margin: 10px 10px;
   text-decoration: none;
+}
+
+#linkI{
+  display: none;
 }
 
 #container {
@@ -102,10 +114,10 @@ video {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0px -330px;
-  position: relative;
 }
 
 #perfil {
+  z-index: 1;
   border-radius: 100px;
   left: 150px;
   top: 2px;
@@ -115,6 +127,7 @@ video {
 }
 
 #fsDev {
+  z-index: 1;
   position: absolute;
   top: 185px;
   left: 245px;
@@ -123,6 +136,7 @@ video {
 }
 
 #tecPro {
+  z-index: 1;
   width: 260px;
   top: 80px;
   left: 250px;
@@ -143,19 +157,36 @@ video {
   background-image: url(/assets/images/fundoForm.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 433.672px;
+  height: 435px;
   width: 291.163px;
   left: 180px;
   top: -22px;
+  z-index: 1;
 }
 
 #left-form {
-  box-shadow: -10px 10px 10px 10px rgba(142, 91, 189, 0.582);
+  /* box-shadow: -10px 10px 10px 10px rgba(142, 91, 189, 0.582); */
   transform: skew(40deg);
 }
 
 #right-form {
-  box-shadow: -30px 2px 10px -10px rgba(142, 91, 189, 0.582);
+  /* box-shadow: -30px -7px 10px -10px rgba(142, 91, 189, 0.582); */
+  transform: skew(-40deg);
+}
+
+.neonImage{
+  position: absolute;
+  z-index: 0;
+  left: 167px;
+}
+
+#ni0{
+  top: -20px;
+  transform: skew(40deg);
+}
+
+#ni1{
+  bottom: -20px;
   transform: skew(-40deg);
 }
 
@@ -264,7 +295,7 @@ button {
 .matrix {
   display: none;
   overflow: hidden;
-  z-index: 2;
+  z-index: 3;
   position: absolute;
   width: 1400px;
   height: 892.375px;
@@ -316,7 +347,7 @@ button {
 
 .back {
   display: none;
-  z-index: 2;
+  z-index: 3;
   font-family: 'Righteous', sans-serif;
   position: absolute;
   right: 40px;
@@ -407,7 +438,7 @@ button {
   height: 170px;
 }
 
-.inlineFlex p {
+.cardModule p{
   display: inline-flex;
   padding: 0px;
   margin: 10px 0 0 0;
@@ -453,11 +484,7 @@ button {
 } 
 
 #pjt1{
-  width: 627px;
-}
-
-#pjt2{
-  margin-left: 80px;  
+  width: 900px;
 }
 
 #projectSection {
@@ -484,7 +511,7 @@ button {
   bottom: 56px;
   left: 36.2px;
   opacity: 0%;
-  z-index: 3;
+  z-index: 4;
   animation: flash 1s forwards; 
 }
 
@@ -763,16 +790,10 @@ ul {
 }
 
 /*
-faça isso quando for modificar o site para celular
+faça isso quando for modificar o site para celular*/
 @media (max-width: 767px) {
-  video{
-      display: none;
-  }
-  body {
-      background: url('poster.jpg');
-      background-size: cover;
-  }
-}*/
+  
+}
 
 @media screen and (max-width:1768px){
 
@@ -804,7 +825,7 @@ faça isso quando for modificar o site para celular
     height: 80px;
   }
 
-  .inlineFlex p {
+  .cardModule p {
     margin: 5px 0 0 0;
   }
 
@@ -838,7 +859,7 @@ faça isso quando for modificar o site para celular
   }
 
   .forms {
-    height: 410px;
+    height: 411.5px;
   }
 
   #perfil {
@@ -861,7 +882,7 @@ faça isso quando for modificar o site para celular
 
  @media screen and (max-width:1766px){
 
-  #linkV{
+  .linkV{
     top: -8px; 
   }   
 
@@ -879,7 +900,7 @@ faça isso quando for modificar o site para celular
   }
 
   .forms {
-    height: 350px;
+    height: 351.5px;
     width: 270px;
     left: 150px;
   }
@@ -1011,12 +1032,6 @@ faça isso quando for modificar o site para celular
     padding: 15px;
   }
 
-  #projectTitle div {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
-  }
-
   #projectSection{
     width: calc(100% - 30px);
     height: calc(78% - 15px);
@@ -1051,12 +1066,6 @@ faça isso quando for modificar o site para celular
   #page {
     min-width: 1200px;
     height: 674px;
-  }
-
-  .forms {
-    height: 350px;
-    width: 270px;
-    left: 150px;
   }
 
   #left-form {
@@ -1141,7 +1150,7 @@ faça isso quando for modificar o site para celular
     width: 238px;
   }
 
-  .inlineFlex p{
+  .cardModule p{
     font-size: 1.05em;
   }
 
@@ -1166,7 +1175,7 @@ faça isso quando for modificar o site para celular
   }
   
   #arrow-botton{
-    z-index: 4;
+    z-index: 5;
     border: 4px solid orange;
     border-top: none;
     animation: neonColor2 7s infinite;
@@ -1175,13 +1184,13 @@ faça isso quando for modificar o site para celular
     width: 200px;
     height: 245px;
     position: relative;
-    background-color: rgb(43, 13, 82);
+    background-color: rgb(46, 5, 83);
     top: -20px;
     left: 75px;
   }
 
   #arrow{
-    z-index: 3;
+    z-index: 4;
     display: block;
     position: relative;
     top: -90px;
@@ -1193,7 +1202,11 @@ faça isso quando for modificar o site para celular
     height: 120px;
     left: 117px;
     top: 90px;
-    z-index: 4;
+    z-index: 5;
+  }
+
+  .neonImage{
+    display: none;
   }
 
   .neon{
@@ -1211,14 +1224,14 @@ faça isso quando for modificar o site para celular
   }
 
   #fsDev{
-    z-index: 4;
+    z-index: 5;
     top: -3px;
     left: 78px;
     width: 200px;  
   }
 
   #saibaMais{
-    z-index: 4;
+    z-index: 5;
     display: block;
     top: 220px;
     width: 260px;
@@ -1230,7 +1243,7 @@ faça isso quando for modificar o site para celular
     z-index: none;
     position: relative;
     bottom: none;
-    left: 50%;   
+    left: 50%;  
   }
 
   #page{
@@ -1268,7 +1281,7 @@ faça isso quando for modificar o site para celular
     height: 176.5px;
   }
 
-  .inlineFlex p {
+  .cardModule p {
     font-size: 0.95em;
     margin-top: 10px;
   }
@@ -1305,13 +1318,8 @@ faça isso quando for modificar o site para celular
   }
 
   #pjt1{
-    width: 627px;
+    width: auto;
   }
-  
-  #pjt2{
-    margin-left: 40px;  
-  }
-  
 
   #projectSection {
     width: calc(100% - 20px);
@@ -1358,5 +1366,165 @@ faça isso quando for modificar o site para celular
 
 }
 
-@media screen and (max-width:1084px){
+@media screen and (max-width:1100px){
+
+   video{
+    display: none;
+  }
+  
+  #linkV1{
+    display: none;
+  }
+
+  #linkI{
+    display: block;
+  }
+
+  .bkg{
+    position: fixed;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;  
+  }
+
+  #bkg1{
+    display: block;
+    width: auto;
+    height: 100%;
+  }
+
+  #bkg2{
+    display: block;
+    width: auto;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width:1020px){
+
+  /* #container{
+    width: 810px;
+    min-width: 900px;
+  } */
+
+  #page{
+    margin-bottom: 50px;
+    min-width: 800px;
+  }
+
+  #person{
+    background-position: 0px -0px;
+    width: 800px;
+    height: 380px;
+    margin: auto;
+    animation: neonColor2 7s infinite;  
+  }
+
+  .block{
+    overflow: hidden;
+    height: fit-content;
+    width: 420px;
+    top: 30px;
+    right: 30px;
+    background-position: 0 320px;
+  }
+
+  #arrow-botton{
+    width: 200px;
+    height: 275px;
+    top: -20px;
+    left: 65px;
+  }
+
+  #arrow{
+    z-index: 4;
+    display: block;
+    position: relative;
+    top: -90px;
+    height: 245px;
+    left: -3px;
+  }
+
+  #fsDev{
+    top: -3px;
+    left: 68px;  
+  }
+
+  #saibaMais{
+    top: 220px;
+    left: 45px;
+  }
+
+  .matrix{
+    width: 800px;
+  }
+
+  #um{
+    height: fit-content;
+    top: 620px;
+  }
+
+  ul {
+    margin-top: 0;
+    font-size: 1.1em;
+  }
+
+  .projectDesc2 h1{
+    font-size: 1.5em;
+  }
+
+  .fourImg img {
+    height: none;
+    width: 45px;
+  }
+
+  .imgProject {
+    height: 280px;
+    margin-bottom: 0;
+  } 
+
+  #descDiv2 p{
+    margin-bottom: auto;    
+  }
+
+  #descDiv2 div{
+    width: 100%;  
+  }
+
+  .projectDesc p {
+    width: 75%;
+  } 
+
+  .tecCard{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-position: 0px 200px;
+  }
+
+  .topCard{
+    width: 160px;
+    height: 80px;
+    margin: 5px 0 auto 0;
+  }
+
+  .cardModule{
+    height: 80px;
+    width: 50%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;   
+    align-items: center;
+  }
+  
+  #tecCardContainer {
+    flex-direction: column;         
+  }
+
+}
+
+@media screen and (max-width:825px){
+  
 }
