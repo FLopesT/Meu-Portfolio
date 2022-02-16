@@ -596,7 +596,7 @@ ul {
   font-size: 2em;
 }
 
-.fourImg img {
+.about img {
   width: 76px;
   height: 76px;
 }
@@ -1335,11 +1335,7 @@ faça isso quando for modificar o site para celular*/
     width: 210px;
   } 
   
-  .about img{
-    height: 60px;
-  } 
-
-  .fourImg img {
+  .about img {
     height: 50px;
   }
 
@@ -1474,7 +1470,7 @@ faça isso quando for modificar o site para celular*/
     font-size: 1.5em;
   }
 
-  .fourImg img {
+  .about img {
     height: none;
     width: 45px;
   }

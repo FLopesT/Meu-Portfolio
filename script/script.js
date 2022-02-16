@@ -7,9 +7,9 @@ let projectContainer = document.getElementById("projectContainer");
 let matrixNumber;
 let pTraco = document.getElementsByClassName("p-");
 
-document.addEventListener('DOMContentLoaded', () => {
-    setTimeout(() => { alert("Este site não é responsivo em telas menores que 840 pixels no momento !") }, 600)
-})
+window.onload = ()=>{
+    alert("Este site não é responsivo em telas menores que 840 pixels no momento!")    
+};
 
 backBtn.forEach((btn) => {
     btn.addEventListener("click", closePage);
