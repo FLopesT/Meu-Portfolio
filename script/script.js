@@ -5,7 +5,6 @@ let container = document.getElementById("container");
 let projectSection = document.getElementById("projectSection");
 let projectContainer = document.getElementById("projectContainer");
 let matrixNumber;
-let pTraco = document.getElementsByClassName("p-");
 
 window.onload = ()=>{
     alert("Este site não é responsivo em telas menores que 840 pixels no momento!")    
@@ -99,14 +98,7 @@ function nextProject(e) {
         rightBtn.style.display = "block";
         btnTime = "right"
         return slideDiv.style = "";
-    } else {                                     //COMENTADO PORQUE DESCONSIDEREI ESSA FUNÇÃO NO MOMENTO
-
-        // animationOn = false;    //quero que a animações não funcione se clicarmos no botão de próximo projeto
-        // if (transitionOn) {     //deu certo mas recebo esse erro;
-        //     projectSection.removeChild(transition);
-        //      transitionOn = false;
-        //}
-
+    } else {                                     
         if (btnTime == "right") {
             slideDiv.style.animation = "slide 1s forwards"
             rightBtn.removeEventListener("click", nextProject);
