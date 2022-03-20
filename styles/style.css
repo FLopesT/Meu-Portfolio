@@ -1367,37 +1367,8 @@ faça isso quando for modificar o site para celular*/
 
 @media screen and (max-width:1100px){
 
-   video{
-    display: none;
-  }
   
-  #linkV1{
-    display: none;
-  }
 
-  #linkI{
-    display: block;
-  }
-
-  .bkg{
-    position: fixed;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;  
-  }
-
-  #bkg1{
-    display: block;
-    width: auto;
-    height: 100%;
-  }
-
-  #bkg2{
-    display: block;
-    width: auto;
-    height: 100%;
-  }
 }
 
 @media screen and (max-width:1020px){
@@ -1407,6 +1378,10 @@ faça isso quando for modificar o site para celular*/
     min-width: 900px;
   } */
 
+  .backGroundM{
+    opacity: 100%;
+  }
+  
   #page{
     margin-bottom: 50px;
     min-width: 800px;
@@ -1530,6 +1505,101 @@ faça isso quando for modificar o site para celular*/
   }
 }
 
-@media screen and (max-width:825px){
+@media screen and (max-width:850px){
   
+  /* #page{
+    margin-bottom: 50px;
+    min-width: 600px;
+  } */
+
+  /* .matrix{
+    width: 600px;
+  } */
+
+  #person{
+    width: 600px;
+    height: 500px;
+    margin: auto;
+  }
+
+  #arrow-botton {
+    width: 190px;
+    height: 460px;
+    top: -20px;
+    left: 35px;
+}
+
+  #arrow{
+    height: 220px;
+    width: 320px;
+    left: -26px;
+    top: -80px;
+  }
+  
+  .linkV{
+    margin-top: 13px;
+    font-size: 0.8em;
+  }
+
+  .block{
+    right: 20px;
+    z-index: 5;
+    height: 360px;
+    width: 290px;
+    background-position: 0 390px;  
+  }
+
+  #fsDev {
+    width: 180px;
+    top: 20px;
+    left: 44px;
+  }
+
+  #saibaMais {
+    width: 300px;
+    top: 400px;
+    left: -11px;
+  }
+
+  #perfil {
+    height: 160px;
+    left: 55px;
+    top: 150px;
+    z-index: 5;
+  }
+
+   video{
+    display: none; 
+  }
+  
+  #linkV1{
+    display: none; 
+  }
+
+  #linkI{
+     display: block; 
+  }
+
+  .bkg{
+    position: fixed;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;  
+  } 
+
+  #bkg1{
+    display: block;
+    width: auto;
+    height: 100%;
+  }
+
+  #bkg2{
+    display: block;
+    width: auto;
+    height: 100%;
+  }
+
+  
+
 }
