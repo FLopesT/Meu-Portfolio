@@ -1218,7 +1218,6 @@ faça isso quando for modificar o site para celular*/
 
   #person{
     width: 1000px;
-    margin: auto;
     animation: neonColor2 7s infinite;  
   }
 
@@ -1391,7 +1390,6 @@ faça isso quando for modificar o site para celular*/
     background-position: 0px -0px;
     width: 800px;
     height: 380px;
-    margin: auto;
     animation: neonColor2 7s infinite;  
   }
 
@@ -1507,24 +1505,26 @@ faça isso quando for modificar o site para celular*/
 
 @media screen and (max-width:850px){
   
-  /* #page{
-    margin-bottom: 50px;
-    min-width: 600px;
-  } */
+  #page{
+    align-items: center;
+    min-width: 650px; 
+  }
 
-  /* .matrix{
+  .matrix{
+    top: 320px;
     width: 600px;
-  } */
+    height: fit-content;
+    margin: 0;
+  } 
 
   #person{
     width: 600px;
     height: 500px;
-    margin: auto;
   }
 
   #arrow-botton {
     width: 190px;
-    height: 460px;
+    height: 420px;
     top: -20px;
     left: 35px;
 }
@@ -1557,7 +1557,7 @@ faça isso quando for modificar o site para celular*/
 
   #saibaMais {
     width: 300px;
-    top: 400px;
+    top: 360px;
     left: -11px;
   }
 
@@ -1600,6 +1600,35 @@ faça isso quando for modificar o site para celular*/
     height: 100%;
   }
 
-  
+  #description{
+    height: fit-content;
+  }
+
+  .cardModule{
+    display: none;
+  }
+
+  .imgProject {
+    height: 200px;
+    margin-bottom: 0;
+  }
+
+  .dois{
+    height: fit-content;
+  }
+
+  #projectContainer div {
+    justify-content: center;
+    height: fit-content;
+  }
+
+  .projectDesc2{
+    height: fit-content;
+  }
+
+  .arrow{
+    height: 50px;
+  }
 
 }
+

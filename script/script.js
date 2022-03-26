@@ -7,7 +7,7 @@ let projectContainer = document.getElementById("projectContainer");
 let matrixNumber;
 
 window.onload = ()=>{
-    alert("Este site não é responsivo em telas menores que 840 pixels no momento!")    
+    alert("Este site não é responsivo em telas menores que 650 pixels no momento!")    
 };
 
 backBtn.forEach((btn) => {
