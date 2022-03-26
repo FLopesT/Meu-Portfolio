@@ -1517,7 +1517,7 @@ faça isso quando for modificar o site para celular*/
     margin: 0;
   } 
 
-  #person{
+  /*#person{
     width: 600px;
     height: 500px;
   }
@@ -1598,7 +1598,7 @@ faça isso quando for modificar o site para celular*/
     display: block;
     width: auto;
     height: 100%;
-  }
+  }*/
 
   #description{
     height: fit-content;
