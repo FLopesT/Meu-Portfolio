@@ -1632,3 +1632,75 @@ faça isso quando for modificar o site para celular*/
 
 }
 
+@media screen and (max-width:645px){
+
+  #container{
+    margin-top: 20px;
+  }
+
+  #linkI{
+    display: none;
+  }
+
+  #perfil {
+    left: 36px;   
+  }
+
+  #fsDev {
+    left: 25px;
+  }
+
+  .block{
+    z-index: 3;
+    width: 190px;
+    background-position: 0 390px;
+    overflow-y: scroll;  
+  }
+
+  #saibaMais {
+    left: -28px;
+  }
+
+  #arrow-botton {
+    width: 190px;
+    top: -10px; 
+    left: 18px;
+  }
+
+  #arrow{
+    left: -42px;
+    top: -80px;
+  }
+
+  #person{
+    width: 480px;
+    height: 500px;
+  }
+
+  .matrix{
+    top: 320px;
+    width: 480px;
+    height: fit-content;
+    margin: 0;
+  } 
+
+  #page{
+    align-items: center;
+    min-width: 480px; 
+  }
+
+  #um{
+    top: 660px;
+  }
+
+  #dois{
+    top: 350px;  
+  }
+
+  .arrow{
+    height: 40px ;
+    top: 300px;
+  }
+
+}
+
