@@ -1651,6 +1651,7 @@ faça isso quando for modificar o site para celular*/
   }
 
   .block{
+    right: 10px;
     z-index: 3;
     width: 190px;
     background-position: 0 390px;
@@ -1699,7 +1700,124 @@ faça isso quando for modificar o site para celular*/
 
   .arrow{
     height: 40px ;
-    top: 300px;
+    top: 240px;
+  }
+
+  #left{
+    left: 20px;
+  }
+
+  #right{
+    right: 20px;
+  }
+
+
+  @keyframes movingArrowRight {
+    50% {
+      right: 30px;
+    }
+  
+    100% {
+      right: 20px;
+    }
+  }
+  
+  @keyframes movingArrowLeft {
+    50% {
+      left: 30px;
+    }
+  
+    100% {
+      left: 20px;
+    }
+  }
+
+}
+
+@media screen and (max-width:500px){
+
+  #person{
+    width: 400px;
+    height: 500px;
+  } 
+  
+  .block{
+    width: 160px;
+    height: 300px;
+    background-position: 0 0px; 
+  }
+
+  .block p{
+    font-size: 0.9em;
+  }
+
+  #arrow-botton {
+    width: 160px;
+    left: 10.5px; 
+  }
+
+  #perfil {
+    height: 140px;
+    left: 25px;   
+  }
+
+  #fsDev {
+    width: 165px;
+    left: 13px;
+  }
+
+  #arrow{
+    width: 280px;
+    left: -45px;
+    top: -85px;
+  }
+
+  #saibaMais{
+    left: -35px;
+    top: 370px;
+    width: 270px;
+  }
+
+  .matrix{
+    top: 320px;
+    width: 400px;
+    height: fit-content;
+    margin: 0;
+  }
+  
+  .imgProject {
+    height: 170px;
+    margin-bottom: 0;
+  }
+
+  .projectDesc h1{
+    font-size: 1.5em;
+  }
+
+  .bigH1 {
+    font-size: 1.5em;
+  }
+
+  .projectDesc2 h1 {
+    font-size: 1.5em;
+  }
+
+  .about img{
+    height: auto;
+    width: 53px;
+  }
+
+  .about ul{
+    padding-left: 20px;
+    font-size: 1em;
+  }
+
+  .arrow{
+    height: 35px ;
+  }
+
+  #dois{
+    top: 324px;  
   }
 
 }
