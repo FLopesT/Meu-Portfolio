@@ -1634,6 +1634,11 @@ faça isso quando for modificar o site para celular*/
 
 @media screen and (max-width:645px){
 
+  #bkg1{
+    width: auto;
+    height: auto;
+  }
+
   #container{
     margin-top: 20px;
   }
