@@ -1740,6 +1740,10 @@ faça isso quando for modificar o site para celular*/
 }
 
 @media screen and (max-width:500px){
+  
+  #page{
+    min-width: 400px; 
+  }
 
   #person{
     width: 400px;
