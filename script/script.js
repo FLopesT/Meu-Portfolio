@@ -44,8 +44,9 @@ function startMatrix() {
 function showContent() {
   document.getElementsByClassName("back")[matrixNumber].style.display = "block";
   if (matrixNumber == 0) {
-    document.getElementById("description").style.display = "flex";
-    document.getElementById("tecCardContainer").style.display = "flex";
+    //
+    document.getElementById("sapiencia").style.display = "flex";
+    //
   } else {
     projectContainer.style.display = "block";
     // showTransition("left");
@@ -57,8 +58,9 @@ function closePage() {
     document.getElementsByClassName("back")[matrixNumber].style.display = "";
     flashAnimation(matrix[matrixNumber]);
     if (matrixNumber == 0) {
-      document.getElementById("description").style = "";
-      document.getElementById("tecCardContainer").style = "";
+      //
+      document.getElementById("sapiencia").style.display = "";
+      //
     } else {
       animationOn = false;
       projectContainer.style.display = "";
