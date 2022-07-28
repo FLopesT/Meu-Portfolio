@@ -1469,6 +1469,10 @@ faça isso quando for modificar o site para celular*/
 }
 
 @media screen and (max-width:850px){
+
+  .projectDesc h1{
+    padding-top: 0px;
+  }
   
   #um{
     top: 390px;
@@ -1677,12 +1681,12 @@ faça isso quando for modificar o site para celular*/
   }
 
   #dois{
-    top: 340px;  
+    top: 380px;  
   }
 
   .arrow{
     height: 40px ;
-    top: 280px;
+    top: 250px;
   }
 
   #left{
@@ -1693,6 +1697,14 @@ faça isso quando for modificar o site para celular*/
     right: 20px;
   }
 
+  .about{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about ul{
+    margin-bottom: 0;  
+  }
 
   @keyframes movingArrowRight {
     50% {
@@ -1717,6 +1729,10 @@ faça isso quando for modificar o site para celular*/
 }
 
 @media screen and (max-width:500px){
+
+  #page{
+    min-width: 430px; 
+  }
 
   #sapiencia li {
     font-size: 1.2em;
@@ -1793,6 +1809,7 @@ faça isso quando for modificar o site para celular*/
 
   .about ul{
     padding-left: 20px;
+    margin-top: 20px;
     font-size: 1em;
   }
 
@@ -1805,8 +1822,62 @@ faça isso quando for modificar o site para celular*/
   }
 
   #dois{
-    top: 324px;  
+    top: 355px;  
   }
+
+}
+
+@media screen and (max-width:430px){
+
+  #saibaMais {
+    left: -35px;
+    top: 370px;
+    width: 265px;
+  }
+
+  #fsDev {
+    width: 160px;
+    left: 14px;
+  }
+
+  .block{
+    right: 6px;
+    width: 130px;
+  }
+
+  #person{
+    width: 360px;
+    height: 500px;
+  } 
+
+  .matrix{
+    width: 360px;
+  }
+
+  #page{
+    min-width: 365px; 
+  }
+
+  #um{
+    top: 450px;
+  }
+
+  #dois{
+    top: 353px;
+  }
+
+  #sapiencia li {
+    font-size: 1em;
+    width: 120px;
+}
+
+.imgProject {
+  height: 150px;
+}
+
+.arrow {
+  top: 280px;
+}
 
 }
 
