@@ -40,6 +40,31 @@ body {
 }
 
 
+/* coisas novas */
+
+.ulNovo1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 124px;
+  align-content: flex-start;  
+}
+
+.pNovo {
+  display: block; 
+  margin-bottom: 16px; 
+  max-width: 1195px; 
+  text-align: justify;  
+}
+
+.pNovo2 {
+  margin-bottom: 16px; 
+  max-width: 650px; 
+  text-align: justify;  
+}
+
+/* coisas novas */
+
 p {
   cursor: default;
 }
@@ -49,7 +74,8 @@ h1 {
 }
 
 h2 {
-  
+  margin-top: 8px;
+  margin-bottom: 8px;  
 }
 
 
@@ -236,9 +262,7 @@ video {
   right: 60px;
   top: 60px;
   width: 550px;
-  background-image: url(/assets/images/fundo21.png);
-  background-position:  0 -220px;
-  background-size: cover;
+  background: linear-gradient(360deg, #ff2d8c -139%, #ff861c 81.23%) !important;
   border-radius: 15px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45);
 }
@@ -366,9 +390,6 @@ button {
   animation: moving 1s infinite;
 }
 
-/* #description div {
-  width: 50%;
-} */
 
 .bigH1 {
   margin: 0;
@@ -376,9 +397,8 @@ button {
 }
 
 .backGroundM {
-  background-image: url(/assets/images/fundooo22.png);
+  background: linear-gradient(360deg, #ff2d8c -100%, #ff861c 81.23%) !important;
   opacity: 90%;
-  background-position: bottom;
   border-radius: 10px;
 }
 
@@ -407,6 +427,7 @@ button {
 
 #sapiencia{
   display: none;
+  position: relative;
   flex-direction: column; 
   height:calc(100% - 60px); 
   margin: 15px; 
@@ -417,13 +438,13 @@ button {
 
 #vergonha{
   border-radius: 10px;
-  position: relative; 
-  right: -150px; 
-  top:-60px;
+  position: absolute; 
+  right: 44px; 
+  top:241px;
   height: 300px;
 }
 
-#sapiencia li {
+.cardzim {
   cursor:default;
   list-style: none;
   font-size: 1.8em;
@@ -435,17 +456,18 @@ button {
   align-items: center;
   border: 1px solid;
   border-radius: 10px;
-  background-image: url(/assets/images/fundooo22.png);
+  background: linear-gradient(360deg, #ff2d8c -139%, #ff861c 81.23%);;
+  /* background-image: url(/assets/images/fundooo22.png);
   background-size:cover;
-  background-position: bottom;
+  background-position: bottom; */
 }
 
-#sapiencia li img{
+.cardzim img{
   height: 32px;
   margin-right: 10px;
 }
 
-#sapiencia li:before {
+.cardzim:before {
   display: inline-block;
   margin-left: -1.3em; 
   width: 1.3em; 
@@ -599,6 +621,8 @@ button {
 ul {
   margin-top: 0;
   font-size: 2em;
+
+  padding-left: 0;
 }
 
 .about img {
@@ -802,16 +826,21 @@ faça isso quando for modificar o site para celular*/
 
 @media screen and (max-width:1768px){
 
-  #sapiencia li{
+  .cardzim{
     font-size: 1.5em;
     padding: 7px;
     width: 170.844px;
   }
 
   #vergonha{
-    right: -170px; 
-    top:-50px;
-    height: 280px;
+    right: 79px; 
+    top: 246px;
+    height: 285px;
+  }
+
+  .pNovo {
+    margin-bottom: 16px; 
+    max-width: 1195px; 
   }
 
   .matrix {
@@ -964,7 +993,11 @@ faça isso quando for modificar o site para celular*/
 
 @media screen and (max-width:1440px) {
 
-  #sapiencia li{
+  .ulNovo1 {
+    height: 90px;
+  }
+
+  .cardzim{
     font-size: 1.5em;
     padding: 3px;
     width: 170.844px;
@@ -1738,7 +1771,7 @@ faça isso quando for modificar o site para celular*/
     min-width: 430px; 
   }
 
-  #sapiencia li {
+  .cardzim {
     font-size: 1.2em;
     padding: 7px;
     width: 140px;
@@ -1870,7 +1903,7 @@ faça isso quando for modificar o site para celular*/
     top: 353px;
   }
 
-  #sapiencia li {
+  .cardzim {
     font-size: 1em;
     width: 120px;
 }
