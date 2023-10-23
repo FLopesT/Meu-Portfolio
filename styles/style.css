@@ -818,11 +818,6 @@ ul {
   }
 }
 
-/*
-faça isso quando for modificar o site para celular*/
-@media (max-width: 767px) {
-  
-}
 
 @media screen and (max-width:1768px){
 
@@ -1312,8 +1307,8 @@ faça isso quando for modificar o site para celular*/
 /*____*/
 
   #dois{
+    margin-top: 8px;
     display:block;
-    margin-top: 25px;
     box-shadow: 0 20px 1em rgb(0 0 0);
   }
 
@@ -1375,12 +1370,6 @@ faça isso quando for modificar o site para celular*/
 
 }
 
-@media screen and (max-width:1100px){
-
-  
-
-}
-
 @media screen and (max-width:1020px){
 
   .projectDesc h1{
@@ -1388,7 +1377,9 @@ faça isso quando for modificar o site para celular*/
   }
 
   #vergonha{
-    display: none;
+    right: 39px;
+    top: 177px;
+    height: 173px;
   }
 
   .lista{
@@ -1460,6 +1451,7 @@ faça isso quando for modificar o site para celular*/
   }
 
   #dois{
+    margin-top: 21px;
     top: 322px;
   }
 
@@ -1510,6 +1502,10 @@ faça isso quando for modificar o site para celular*/
 
 @media screen and (max-width:850px){
 
+  #vergonha {
+    display: none;
+  }
+
   .ulNovo1, .ulNovo2 {
     height: 135px;
     /* margin-top: 16px */
@@ -1520,7 +1516,7 @@ faça isso quando for modificar o site para celular*/
   }
   
   #um{
-    top: 429px;
+    top: 425px;
   }
 
   #page{
@@ -1632,6 +1628,7 @@ faça isso quando for modificar o site para celular*/
   }
 
   .dois{
+    margin-top: 13px;
     height: fit-content;
   }
 
@@ -1726,6 +1723,7 @@ faça isso quando for modificar o site para celular*/
   }
 
   #dois{
+    margin-top: 27px;
     top: 380px;  
   }
 
@@ -1871,10 +1869,11 @@ faça isso quando for modificar o site para celular*/
   }
 
   #um{
-    top: 425px;
+    top: 474px;
   }
 
   #dois{
+    margin-top: 18px;
     top: 355px;  
   }
 
@@ -1912,7 +1911,7 @@ faça isso quando for modificar o site para celular*/
   }
 
   #um{
-    top: 450px;
+    top: 496px;
   }
 
   #dois{

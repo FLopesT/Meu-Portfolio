@@ -81,34 +81,55 @@ function closePage() {
 let rightBtn = document.getElementById("right");
 let leftBtn = document.getElementById("left");
 let btnTime = "right";
+let pjtPage = 0
 
 rightBtn.addEventListener("click", nextProject);
 
 let slideDiv = document.getElementById("slideDiv");
 
 function nextProject(e) {
-  if (!e) {
+  if (!e) { //reset de seleção projetos
+    alert('uai')
     leftBtn.removeEventListener("click", nextProject);
     rightBtn.addEventListener("click", nextProject);
     leftBtn.style.display = "none";
     rightBtn.style.display = "block";
     btnTime = "right";
     return (slideDiv.style = "");
+
   } else {
-    if (btnTime == "right") {
+
+    console.log("🚀 ~Socorro e:", e)
+
+    if (pjtPage == 0) {
+      pjtPage++;
       slideDiv.style.animation = "slide 1s forwards";
       rightBtn.removeEventListener("click", nextProject);
       leftBtn.addEventListener("click", nextProject);
+
       rightBtn.style.display = "none";
       leftBtn.style.display = "block";
-      btnTime = "left";
-    } else {
+      
+      return btnTime = "left";
+    }
+    if (pjtPage == 1) {
+      pjtPage--;
       leftBtn.removeEventListener("click", nextProject);
       rightBtn.addEventListener("click", nextProject);
       leftBtn.style.display = "none";
       rightBtn.style.display = "block";
       btnTime = "right";
-      slideDiv.style.animation = "slide2 1s forwards";
+      return slideDiv.style.animation = "slide2 1s forwards";
     }
+
+
   }
+}
+
+function nextPage() {
+  alert('hehehe')
+}
+
+function lastPage() {
+  alert('hoho')
 }
