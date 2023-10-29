@@ -552,6 +552,13 @@ button {
   top: 0;
 }
 
+#project3 {
+  background-size: cover;
+  position: absolute;
+  right: -200%;
+  top: 0;
+}
+
 .projectDesc {
   width: 100%;
   height: 134px;
@@ -673,11 +680,31 @@ ul {
 
 @keyframes slide2 {
   0% {
-    right: 100%;
+    left: -100%;
   }
 
   100% {
-    right: 0%;
+    left: -200%;
+  }
+}
+
+@keyframes slideReturn {
+  0% {
+    left: -200%;
+  }
+
+  100% {
+    left: -100%;
+  }
+}
+
+@keyframes slideReturn2 {
+  0% {
+    left: -100%;
+  }
+  
+  100% {
+    left: 0%;
   }
 }
 
@@ -835,7 +862,7 @@ ul {
 
   .pNovo {
     margin-bottom: 16px; 
-    max-width: 1195px; 
+    max-width: 1129px; 
   }
 
   .matrix {
@@ -999,9 +1026,9 @@ ul {
   }
 
   #vergonha{
-    right: -170px; 
-    top:-50px;
-    height: 250px;
+    /* right: 79px;  */
+    top: 246px;
+    height: 285px;
   }
 
   .vid2{
@@ -1347,6 +1374,10 @@ ul {
     height: 70px;
   }
 
+  .about ul {
+    margin-left: 33px;
+  }
+
   ul {
     margin-top: 0;
     font-size: 1.25em;
@@ -1519,6 +1550,10 @@ ul {
     top: 425px;
   }
 
+  .about ul {
+    margin-left: 0px;
+  }
+
   #page{
     align-items: center;
     min-width: 650px; 
@@ -1633,7 +1668,7 @@ ul {
   }
 
   #projectContainer div {
-    justify-content: center;
+    justify-content: space-around;
     height: fit-content;
   }
 

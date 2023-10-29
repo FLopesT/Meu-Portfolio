@@ -44,12 +44,9 @@ function startMatrix() {
 function showContent() {
   document.getElementsByClassName("back")[matrixNumber].style.display = "block";
   if (matrixNumber == 0) {
-    //
     document.getElementById("sapiencia").style.display = "flex";
-    //
   } else {
     projectContainer.style.display = "block";
-    // showTransition("left");
   }
 }
 
@@ -64,7 +61,7 @@ function closePage() {
     } else {
       animationOn = false;
       projectContainer.style.display = "";
-      nextProject(false);
+      resetarProjeto();
     }
     matrix[matrixNumber].style.display = "block";
   }, 150);
@@ -80,56 +77,38 @@ function closePage() {
 
 let rightBtn = document.getElementById("right");
 let leftBtn = document.getElementById("left");
-let btnTime = "right";
 let pjtPage = 0
-
-rightBtn.addEventListener("click", nextProject);
-
 let slideDiv = document.getElementById("slideDiv");
 
-function nextProject(e) {
-  if (!e) { //reset de seleção projetos
-    alert('uai')
-    leftBtn.removeEventListener("click", nextProject);
-    rightBtn.addEventListener("click", nextProject);
-    leftBtn.style.display = "none";
-    rightBtn.style.display = "block";
-    btnTime = "right";
-    return (slideDiv.style = "");
-
-  } else {
-
-    console.log("🚀 ~Socorro e:", e)
-
-    if (pjtPage == 0) {
-      pjtPage++;
-      slideDiv.style.animation = "slide 1s forwards";
-      rightBtn.removeEventListener("click", nextProject);
-      leftBtn.addEventListener("click", nextProject);
-
-      rightBtn.style.display = "none";
-      leftBtn.style.display = "block";
-      
-      return btnTime = "left";
-    }
-    if (pjtPage == 1) {
-      pjtPage--;
-      leftBtn.removeEventListener("click", nextProject);
-      rightBtn.addEventListener("click", nextProject);
-      leftBtn.style.display = "none";
-      rightBtn.style.display = "block";
-      btnTime = "right";
-      return slideDiv.style.animation = "slide2 1s forwards";
-    }
-
-
-  }
+function resetarProjeto() {
+  leftBtn.style.display = "none";
+  rightBtn.style.display = "block";
+  pjtPage = 0;
+  return (slideDiv.style = "");
 }
 
 function nextPage() {
-  alert('hehehe')
+  if (pjtPage == 0) {
+    pjtPage++;
+    leftBtn.style.display = "block"; 
+    return slideDiv.style.animation = "slide 1s forwards";    
+  }
+  if (pjtPage == 1) {
+    pjtPage++;
+    rightBtn.style.display = "none";
+    return slideDiv.style.animation = "slide2 1s forwards";  
+  }
 }
 
-function lastPage() {
-  alert('hoho')
+function returnPage() {
+  if (pjtPage == 2) {
+    pjtPage--;
+    rightBtn.style.display = "block";
+    return slideDiv.style.animation = "slideReturn 1s forwards";  
+  }
+  if (pjtPage == 1) {
+    pjtPage--;
+    leftBtn.style.display = "none";
+    return slideDiv.style.animation = "slideReturn2 1s forwards";     
+  }
 }
