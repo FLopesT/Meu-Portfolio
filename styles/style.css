@@ -50,6 +50,43 @@ body {
   align-content: flex-start;  
 }
 
+.projectDescP{
+  display: block !important;
+}
+
+#osapps {
+  align-items: start;
+  font-size: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+#osapps ul {
+  font-size: 1.2em !important;
+  margin-left: 60px;
+  margin-top: 0 !important;  
+}
+
+#osapps h1 {
+  text-align: start !important;
+  margin-left: 40px;
+  margin-bottom: 11px !important;
+  margin-top: 11px !important;
+}
+
+.moontech {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin-top: 40px !important;
+}
+
+.moontech span {
+  width: 500px;
+}
+
 .pNovo {
   display: block; 
   margin-bottom: 16px; 
@@ -848,6 +885,10 @@ ul {
 
 @media screen and (max-width:1768px){
 
+  .about ul {
+    margin-left: 60px;
+  }
+
   .cardzim{
     font-size: 1.5em;
     padding: 7px;
@@ -1403,6 +1444,10 @@ ul {
 
 @media screen and (max-width:1020px){
 
+  .moontech {
+    margin-top: 20px !important;
+  }
+
   .projectDesc h1{
     padding-top: 12px;
   }
@@ -1533,6 +1578,10 @@ ul {
 
 @media screen and (max-width:850px){
 
+  .moontech {
+    margin-top: 0px !important;
+  }
+
   #vergonha {
     display: none;
   }
@@ -1662,13 +1711,12 @@ ul {
     margin-bottom: 0;
   }
 
-  .dois{
-    margin-top: 13px;
-    height: fit-content;
+  #dois{
+    top: 328px;
   }
 
   #projectContainer div {
-    justify-content: space-around;
+    justify-content: center;
     height: fit-content;
   }
 
@@ -1759,7 +1807,7 @@ ul {
 
   #dois{
     margin-top: 27px;
-    top: 380px;  
+    top: 362px;  
   }
 
   .arrow{
@@ -1909,7 +1957,7 @@ ul {
 
   #dois{
     margin-top: 18px;
-    top: 355px;  
+    top: 389px;  
   }
 
 }
@@ -1950,7 +1998,7 @@ ul {
   }
 
   #dois{
-    top: 353px;
+    top: 423px;
   }
 
   .cardzim {
